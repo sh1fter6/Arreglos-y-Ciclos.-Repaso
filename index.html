@@ -6,24 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Repaso · Arreglos y Ciclos</title>
     <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <h1>🏅 Repaso: Arreglos y Ciclos</h1>
-    <p>Abre la consola (tecla F12 → pestaña Console) para ver los resultados.</p>
+<body class="app">
+    <h1 class="app__title"><i class="fa-solid fa-medal"></i> Repaso: Arreglos y Ciclos</h1>
+    <p class="app__description">Ya no es necesario abrir la consola :DDD</p>
 
-    <!-- type="module" hace que cada archivo tenga su propio espacio:
-       así las variables de un reto NO chocan con las de otro -->
-    <script type="module" src="reto-1.js"></script>
-    <script type="module" src="reto-2.js"></script>
-    <script type="module" src="reto-3.js"></script>
-    <script type="module" src="reto-4.js"></script>
-    <script type="module" src="reto-5.js"></script>
-    <script type="module" src="reto-6.js"></script>
-    <script type="module" src="reto-7.js"></script>
-    <script type="module" src="reto-8.js"></script>
-    <script type="module" src="reto-9.js"></script>
-    <script type="module" src="liga-final.js"></script>
+    <div class="terminal">
+        <div class="terminal__header">
+            <div class="terminal__buttons">
+                <div class="terminal__dot terminal__dot--red"></div>
+                <div class="terminal__dot terminal__dot--yellow"></div>
+                <div class="terminal__dot terminal__dot--green"></div>
+            </div>
+            <div class="terminal__title" id="nombre-reto">Cargando...</div>
+            <div style="width: 50px;"></div>
+        </div>
+        <div class="terminal__body" id="consola-pantalla">
+            <div id="logs"></div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="custom-select">
+            <div class="custom-select__trigger">
+                <span id="nombre-reto-label">Seleccionar Reto</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="custom-select__options">
+                <div class="custom-select__option" data-value="0">Reto 1: Cajón de Frutas</div>
+                <div class="custom-select__option" data-value="1">Reto 2: Filtrar Números</div>
+                <div class="custom-select__option" data-value="2">Reto 3: Gastos y Promedio</div>
+                <div class="custom-select__option" data-value="3">Reto 4: Ordenar Edades</div>
+                <div class="custom-select__option" data-value="4">Reto 5: Lista de Alumnos</div>
+                <div class="custom-select__option" data-value="5">Reto 6: Suma de Matriz</div>
+                <div class="custom-select__option" data-value="6">Reto 7: Buscar la Estrella</div>
+                <div class="custom-select__option" data-value="7">Reto 8: Rebote de Pelota</div>
+                <div class="custom-select__option" data-value="8">Reto 9: Control de Acceso</div>
+                <div class="custom-select__option" data-value="9">Liga Final</div>
+            </div>
+        </div>
+
+        <button id="btn-siguiente" class="controls__btn">Siguiente Reto <i class="fa-solid fa-arrow-right"></i></button>
+        <button id="btn-reejecutar" class="controls__btn">Re-ejecutar <i class="fa-solid fa-arrows-rotate"></i></button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
