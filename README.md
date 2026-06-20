@@ -1,0 +1,1 @@
+Este es un ejericio para el Bootcamp DESARROLLO DE APLICACIONES FRONT-END TRAINEE V2.0. En el que repasamos lo visto las últimas clases, trabajando con arreglos, matrices, contadores, ciclos while, for, etc. Esto es un compilado de todo eso.
